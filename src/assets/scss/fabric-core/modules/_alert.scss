@@ -1,0 +1,20 @@
+.ms-MessageBar.ms-MessageBar--error {
+    @extend %theme-background-color-light-danger;
+    @extend %theme-error-color;
+    border: 1px solid !important;
+    @extend %theme-error-border-color;
+    z-index: 1001 !important;
+}
+
+.ms-MessageBar.ms-MessageBar--success {
+    @extend %theme-green-alert-background-color;
+    @extend %theme-green-alert-color;
+    border: 1px solid !important;
+    @extend %theme-green-border-color;
+    z-index: 1001 !important;
+}
+
+.ms-MessageBar .ms-Icon--ChromeClose {
+    float: right;
+    font-size: 11px;
+}

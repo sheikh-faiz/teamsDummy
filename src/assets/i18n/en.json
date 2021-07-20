@@ -1,0 +1,168 @@
+{
+    "branding": {
+        "cloudlabs": "CloudLabs"
+    },
+    "common": {
+        "exam": "Exam",
+        "language": "Language",
+        "sections": "Sections",
+        "question": "Question",
+        "section": "Section",
+        "test": "tests",
+        "of": "of",
+        "popup": {
+            "header": {
+                "feedback": "Feedback Form",
+                "confirmation": "Confirmation",
+                "examCompleted": "Test Completed",
+                "helpSection": "Help Section"
+            }
+        },
+        "success": "success",
+        "error": "error",
+        "message": {
+            "feedbackSuccess": "Thank you for the feedback",
+            "credFailed": "Sorry! Your credentials were expired.",
+            "copyVoucherCode": "Voucher Code copied"
+        },
+        "practiceTest": "Practice Tests",
+        "completedTest": "Completed Tests"
+    },
+    "examList": {
+        "table": {
+            "headings": {
+                "examName": "Name",
+                "duration": "Duration",
+                "tags": "Tags"
+            }
+        }
+    },
+    "completedExamList": {
+        "table": {
+            "headings": {
+                "examName": "Name",
+                "startDate": "Taken on",
+                "marks": "Marks",
+                "percentage": "Percentage"
+            }
+        }
+    },
+    "exam": {
+        "questions": {
+            "questionSection": "Question Section",
+            "note": "Note",
+            "instruction": "Instruction",
+            "answerSection": "Answer Section",
+            "dropAnswer": "Drop Your Answer here"
+        },
+        "result": {
+            "title": "Result",
+            "failed": "Failed",
+            "passed": "Passed",
+            "marks": "Marks",
+            "timeSpent": "Time spent",
+            "explanation": "Explanation",
+            "points": "points"
+        },
+        "summary": {
+            "minutes": "Minutes",
+            "toPass": "To Pass",
+            "examTitle": "Exam",
+            "overview": "Overview"
+        },
+        "examPopup": {
+            "voucherCode": "Enter Voucher",
+            "activationCode": "Enter activation code",
+            "take": "Take",
+            "continue": "Continue",
+            "examTitle": "Details",
+            "takeTest": "Test"
+        },
+        "section": {
+            "sectionReview": {
+                "title": "Review Section",
+                "header": {
+                    "section": "Section",
+                    "timeRemaining": "Time Remaining"
+                },
+                "answered": "Answered",
+                "skipped": "Skipped",
+                "notAnswered": "Not Answered",
+                "review": "Review"
+            },
+            "performanceQuiz": {
+                "header": {
+                    "infoInstruct": "Information & Instructions"
+                },
+                "credIntruct": "Credentials & Instructions",
+                "loginCred": "Login Credentials",
+                "credTitle": "Here are your credentials to login to",
+                "msAzure": "Microsoft Azure.",
+                "creatingCred": "Creating Credentials",
+                "userName": "Username",
+                "password": "Password"
+            }
+        },
+        "common": {
+            "freeTest": "Free Test",
+            "paidTest": "Paid Test"
+        }
+    },
+    "actions": {
+        "save": "Save",
+        "submit": "Submit",
+        "startTest": "Start Test",
+        "cancelTest": "Cancel Test",
+        "getResult": "Get Result",
+        "no": "No",
+        "yes": "Yes",
+        "closeTest": "Close Test",
+        "finishSection": "Finish Section",
+        "action": "Action",
+        "back": "Back",
+        "finishTest": "Finish Test",
+        "confirmation": "Confirmation",
+        "skip": "Skip",
+        "submitFeedback": "Submit Feedback",
+        "reset": "Reset",
+        "help": "Help",
+        "previousQuestion": "Previous Question",
+        "nextQuestion": "Next Question",
+        "retry": "Retry",
+        "copyCode": "Copy Code",
+        "downloadApplication": "Download Application"
+    },
+    "downloadApp": {
+        "step": {
+            "step1Text": "Step 1: Copy Voucher Code",
+            "step2Text": "Step 2: Download Practice Test Application",
+            "step1Content": "To copy the voucher code, click the “Copy Voucher Code” button below. Once Practice Test is running, this will immediately enter your voucher code. This voucher code will allow you to begin the exam check-in process",
+            "step2Content": "Click the 'Download Application' button and run the application from the download folder",
+            "downloadTestText": "Download Practice Test Application"
+        }
+    },
+    "errors": {
+        "noAccessToApp": "You do not have permission to access this app!",
+        "examInstanceUniqueNameNull": "examInstanceUniqueName is NULL",
+        "cloudLabsCommonError": "There was an unauthorized error while processing last request. Please close current tab and open CloudLabs exam in a new tab.",
+        "teamsCommonError": "Oops! we could not process your last request. Please click on the reload icon on the top to resolve this."
+    },
+    "message": {
+        "voucherRequired": "Voucher is required",
+        "activationCodeRequired": "Activation code is required",
+        "voucherSuccessMessage": "Voucher Successfully Added",
+        "activationCodeSuccessMessage": "Activation code Successfully Added",
+        "voucherFailureMessage": "Invalid Voucher Code",
+        "activationCodeFailureMessage": "Invalid Activation Code",
+        "confirmationMessage": "Are you sure that you want to Finish Test?",
+        "getResultMessage": "Thanks for attending the exam!",
+        "confimSectionHeader": "Are you sure you want to continue with this action ?",
+        "confimSectionMessage": "Warning: This action will submit the answers for this section and cannot be altered. Are you sure you want to proceed?",
+        "feedbackContain": "We would like to hear your thoughts, suggestion, concerns or problems with anything so we can improve!",
+        "feedbackExperienceString": "How did you like the experience?",
+        "feedbackQualityString": "How do you compare with question quality?",
+        "feedbackText": "Any other suggestions ?",
+        "feedbackSuccess": "Thank you for your feedback",
+        "rating": "Please provide rating"
+    }
+}

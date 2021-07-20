@@ -1,0 +1,47 @@
+// Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE in the project root for license information.
+//
+// OSS Framework Design Language
+// --------------------------------------------------
+// Fabric Core Module Loader (LTR)
+// Variables and mixins
+@import "./References";
+// Partials that output CSS
+@import "./Animation";
+@import "./BrandIcon";
+@import "./Color";
+@import "./Color.Background";
+@import "./Color.Border";
+@import "./Color.Font";
+@import "./Depth";
+@import "./Font";
+@import "./Font.Definitions";
+@import "./Grid";
+@import "./Icon";
+@import "./Icon.Definitions";
+@import "./Responsive";
+@import "./Utility";
+@import "./Wrapper";
+
+// Custom modules here
+@import "theming/themes";
+@import "modules/fonts";
+@import "modules/performance-quiz";
+@import "modules/button";
+@import "modules/forms";
+@import "modules/checkbox";
+@import "modules/radio";
+@import "modules/textbox";
+@import "modules/table";
+@import "modules/dropdown";
+@import "modules/header";
+@import "modules/snackbar";
+@import "modules/confirm_dialog";
+@import "modules/alert";
+@import "modules/tabmenu";
+@import "modules/pagination";
+@import "modules/dialog";
+@import "modules/loader";
+@import "modules/textarea";
+@import "modules/global_theming";
+@import "modules/nav";
+@import "modules/rating";

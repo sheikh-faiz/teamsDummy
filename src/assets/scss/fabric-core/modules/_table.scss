@@ -1,0 +1,100 @@
+.p-datatable .p-datatable-tbody>tr {
+    background: $ms-color-gray10 !important;
+    color: $ms-color-gray180 !important;
+    &:hover {
+        background: $ms-color-white !important;
+    }
+}
+
+.p-datatable .p-datatable-thead>tr>th {
+    background: $ms-color-gray10 !important;
+}
+
+.imageboxth {
+    width: 100px;
+}
+
+.badgesth {
+    width: 350px;
+}
+
+.durationth {
+    width: 150px;
+}
+
+.actionth {
+    width: 70px;
+}
+
+.questionth {
+    width: 55%;
+}
+
+.answeredth,
+.notansweredth,
+.actionreviewth {
+    width: 15%;
+}
+
+.p-datatable .p-datatable-tbody>tr>td {
+    padding: 15px 1rem;
+}
+
+.p-datatable .p-datatable-tbody>tr>td {
+    padding: 15px 1rem;
+}
+
+.p-datatable .p-datatable-thead>tr>th {
+    padding: 1.3rem 1rem;
+    border: 1px solid $ms-color-gray30;
+    border-width: 1px 0 1px 0;
+}
+
+.p-datatable .p-datatable-tbody>tr>td:first-child {
+    border-left: 10px solid transparent;
+}
+
+.p-datatable .p-datatable-tbody>tr:hover>td:first-child {
+    border-left: 8px solid;
+    @extend %theme-border-left-color;
+}
+
+.p-datatable {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.currentSection>td {
+    @extend %theme-link-color;
+}
+
+.completedSection>td {
+    @extend %theme-green-color-10;
+}
+
+.ms-SectionBar-icon>.ms-Icon--SkypeArrow {
+    transform: rotate(180deg);
+}
+
+.ms-SectionBar-icon>.ms-Icon--Accept {
+    font-size: 14px;
+    @extend %theme-green-color-10;
+}
+
+.ms-SectionBar-icon>.ms-Icon--ChromeClose {
+    font-size: 14px;
+    @extend %theme-error-color;
+}
+
+.p-datatable-auto-layout.section-review-table>.p-datatable-wrapper>table {
+    margin-bottom: 70px;
+}
+
+th#badgesth {
+    width: 10rem;
+}
+
+th#exname {
+    width: 15rem;
+}

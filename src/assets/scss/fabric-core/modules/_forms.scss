@@ -1,0 +1,9 @@
+.form-control.is-invalid {
+    border: 1px solid !important;
+    @extend %theme-error-border-color;
+}
+
+.ms-input-label.required::after {
+    content:" *";
+    @extend %theme-error-color;
+}

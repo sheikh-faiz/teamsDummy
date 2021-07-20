@@ -1,0 +1,51 @@
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+.rating {
+    border: none;
+    float: left;
+    input {
+        display: none;
+        &:checked~label {
+            color: $ms-color-yellow;
+            &:hover {
+                color: $ms-color-yellow;
+            }
+            &:hover~label {
+                color: $ms-color-yellow;
+            }
+        }
+        &:checked+label {
+            &:hover {
+                color: $ms-color-yellow;
+            }
+        }
+    }
+    label {
+        &:before {
+            margin: 5px;
+            font-size: 1.4rem;
+            display: inline-block;
+            content: "\2605";
+        }
+        color: $ms-color-lightGrey;
+        float: right;
+        &:hover~input {
+            &:checked~label {
+                color: $ms-color-yellow;
+            }
+        }
+    }
+    &:not(:checked) {
+        >label {
+            &:hover {
+                color: $ms-color-yellow;
+            }
+            &:hover~label {
+                color: $ms-color-yellow;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.ms-MessageBar {
+    width: 250px;
+    margin-top: 50px;
+    border-radius: 3px;
+    .ms-Icon--ChromeClose {
+        float: right;
+    }
+    .ms-MessageBar-text {
+        width: 100%;
+    }
+}
+
+.snackbar {
+    position: fixed;
+    left: 78%;
+    bottom: 73%;
+}

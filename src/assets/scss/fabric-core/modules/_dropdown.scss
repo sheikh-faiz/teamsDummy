@@ -1,0 +1,91 @@
+.ts-dropdown-fluent-success {
+    @extend %theme-green-color-10;
+    border: 1px solid !important;
+    @extend %theme-green-border-color-10;
+}
+
+.ts-dropdown-fluent-failure {
+    @extend %theme-error-color;
+    text-decoration: line-through;
+    border: 1px solid !important;
+    @extend %theme-error-border-color;
+}
+
+.dropdown-div {
+    .fabric-icon-text-pos-1 {
+        position: relative;
+        bottom: 0.15rem;
+        display: inline;
+    }
+    .btn {
+        font: normal normal normal 14px/20px Segoe UI !important;
+        text-align: left;
+        &:focus,
+        &:active {
+            outline: none !important;
+            box-shadow: none;
+            border-bottom: 2px solid;
+            @extend %theme-border-bottom-color;
+        }
+    }
+    .select {
+        background-color: $ms-color-white !important;
+        padding: 10px;
+        width: 200px;
+        height: 42px;
+    }
+    .dropdown-menu {
+        width: 200px;
+        li {
+            padding: 5px;
+            @extend %theme-body-text-color;
+            text-align: left;
+            font: normal normal normal 14px/20px Segoe UI;
+            opacity: 1;
+            &:hover {
+                cursor: pointer;
+                background: $ms-color-communicationPrimary 0% 0% no-repeat padding-box;
+                @extend %theme-link-background-color;
+                border-radius: 3px 3px 0px 0px;
+                opacity: 1;
+                color: $ms-color-white !important;
+            }
+        }
+    }
+}
+
+.dropdown-lang-width {
+    width: 100px !important;
+}
+
+.question-dropdown-menu {
+    margin-top: 123px !important;
+}
+
+.dropdown-div {
+    display: inline-block;
+}
+
+.ts-dropdown-fluent-toggle::after {
+    display: inline-block;
+    margin-left: 0;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+    display: inline-block;
+    font-family: "FabricMDL2Icons";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    border: none !important;
+    content: "\E70D";
+    float: right;
+}
+
+.test-list-dropdown-position {
+    position: absolute;
+    right: 20px;
+}

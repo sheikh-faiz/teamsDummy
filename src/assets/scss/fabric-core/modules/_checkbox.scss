@@ -1,0 +1,100 @@
+.ts-checkbox-fluent {
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    margin-top: 2px;
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    &+label {
+        position: relative;
+        cursor: pointer;
+        padding: 0;
+        width: 100%;
+    }
+    // Box.
+    &+label:before {
+        content: "";
+        margin-right: 10px;
+        display: inline-block;
+        // vertical-align: text-top;
+        width: 20px;
+        height: 20px;
+        background: $ms-color-white;
+        border: 1px solid $ms-color-gray70 !important;
+        top: 0px;
+        position: relative;
+        float: left;
+    }
+    // Box hover
+    &:hover+label:before {
+        background: $ms-color-white;
+    }
+    // Box focus
+    &:active+label:before {
+        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+    }
+    // Box checked
+    &:checked+label:before {
+        @extend %theme-link-background-color;
+    }
+    // Disabled state label.
+    &:disabled+label {
+        color: $ms-color-gray70;
+        cursor: auto;
+    }
+    // Disabled box.
+    &:disabled+label:before {
+        box-shadow: none;
+        background: $ms-color-gray10;
+    }
+    // Checkmark. Could be replaced with an image
+    &:checked+label:after {
+        content: "";
+        position: absolute;
+        left: 5px;
+        top: 9px;
+        background: $ms-color-white;
+        width: 2px;
+        height: 2px;
+        box-shadow: 2px 0 0 $ms-color-white, 4px 0 0 $ms-color-white, 4px -2px 0 $ms-color-white, 4px -4px 0 $ms-color-white, 4px -6px 0 $ms-color-white, 4px -8px 0 $ms-color-white;
+        transform: rotate(45deg);
+    }
+}
+
+.ts-checkbox-fluent-success {
+    &+label:before {
+        background-color: $ms-color-white !important;
+        @extend %theme-green-border-color-10;
+    }
+    &+label {
+        @extend %theme-green-color-10;
+    }
+}
+
+.ts-checkbox-fluent-failure {
+    &+label:before {
+        background-color: $ms-color-white !important;
+        @extend %theme-error-border-color;
+    }
+    &+label {
+        text-decoration: line-through;
+        @extend %theme-error-color;
+    }
+}
+
+.ts-checkbox-fluent-primary {
+    &+label:before {
+        background-color: $ms-color-white !important;
+    }
+}
+
+.ts-checkbox-fluent+label .ts-checkbox-fluent-text {
+    display: inline-block;
+    width: calc(100% - 40px);
+    text-decoration: inherit;
+}
+
+.ts-checkbox-fluent-failure span.ts-checkbox-fluent-text {
+    text-decoration: line-through;
+}

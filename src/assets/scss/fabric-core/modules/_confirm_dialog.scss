@@ -1,0 +1,87 @@
+.ts-modal-dialog.ts-confirm-modal-dialog {
+    z-index: 10001000;
+}
+
+.ngdialog {
+    position: fixed;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 10000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    animation: ngdialog-fadein 0.5s;
+}
+
+.ngdialog {
+    box-sizing: border-box;
+}
+
+.ts-modal-dialog {
+    align-items: center;
+    display: flex;
+}
+
+.ts-modal-dialog .analytics-panel {
+    border-radius: 0.3rem;
+}
+
+.ts-modal-dialog .ts-modal-dialog-footer-buttons {
+    display: block;
+    font-size: 0;
+    text-align: right;
+}
+
+.ts-modal-dialog.ngdialog .ngdialog-content {
+    box-shadow: 0 1.6rem 1.8rem -0.4rem rgb(0 0 0 / 10%);
+    background: 0;
+    margin: auto;
+    padding: 0;
+    position: relative;
+    width: 40rem;
+}
+
+.ts-modal-dialog .ts-modal-dialog-footer {
+    background: $ms-color-white;
+    border-radius: 0 0 0.3rem 0.3rem;
+    color: $ms-color-gray180;
+    margin-top: -0.1rem;
+    padding: 1.6rem 3.2rem 3.2rem;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.ts-modal-dialog .ts-modal-dialog-content {
+    background: $ms-color-white;
+    position: relative;
+    color: $ms-color-gray180;
+    padding: 0.7rem 3.2rem 0;
+}
+
+.ts-modal-dialog .ts-modal-dialog-header {
+    background: $ms-color-white;
+    border-radius: 0.3rem 0.3rem 0 0;
+    color: $ms-color-gray180;
+    position: relative;
+    flex: 0 0 auto;
+    padding: 1.5rem 3.2rem 0.3rem !important;
+    .ms-Icon--ChromeClose {
+        position: absolute;
+        float: right;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+}
+
+.ts-modal-dialog-footer-buttons {
+    .ts-btn {
+        font: normal normal 500 14px/20px Segoe UI !important;
+        height: 3rem;
+    }
+    button {
+        margin-left: 10px;
+    }
+}

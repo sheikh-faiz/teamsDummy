@@ -1,0 +1,40 @@
+.nav-pills {
+    flex-wrap: wrap;
+
+    li {
+        a {
+            text-decoration: none !important;
+            span {
+                @extend %theme-link-color;
+            }
+        }
+    }
+}
+
+.nav-item.nav-bottom-border {
+
+    span {
+        color: $ms-color-gray180 !important;
+    }
+
+    &:hover {
+        border-bottom: 4px solid $ms-color-communicationTint40;
+    }
+}
+
+.nav-item {
+    height: 2.7rem;
+    &.disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
+
+.nav {
+    &.flex-column {
+        .nav-link {
+            width: 100%;
+        }
+    }
+}

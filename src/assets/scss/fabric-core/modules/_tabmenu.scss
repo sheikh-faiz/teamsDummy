@@ -1,0 +1,53 @@
+.primengTab {
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.p-tabmenu .p-tabmenu-nav {
+    background: $ms-color-gray10 !important;
+}
+
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link {
+    background: $ms-color-gray10 !important;
+    color: $ms-color-gray180 !important;
+}
+
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    border-width: 0 0 2px 0 !important;
+}
+
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    padding-bottom: 1.5rem !important;
+}
+
+.p-tabview .p-tabview-nav li {
+    margin-right: .5rem !important;
+}
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link, .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
+    @extend %theme-border-color;
+    @extend %theme-link-color;
+    background: $ms-color-gray10 !important;
+}
+
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    text-decoration: none;
+    background: $ms-color-gray10 !important;
+    color: $ms-color-gray180 !important;
+}
+
+.p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
+    box-shadow: none;
+}
+
+.p-tabview .p-tabview-nav,
+.p-tabview .p-tabview-panels {
+    background-color: $ms-color-gray10 !important;
+}
+
+#exam-popup-tab > div > ul, #exam-popup-tab > div > ul > li > a, #exam-popup-tab .p-tabview-panels {
+    background-color: $ms-color-white !important;
+}
+

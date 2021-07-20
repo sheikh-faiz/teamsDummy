@@ -1,0 +1,27 @@
+.ts-textbox-fluent {
+    background: $ms-color-gray30;
+    border-radius: 3px;
+    border: 0;
+    padding: 5px;
+    width: 350px;
+}
+
+.ts-textbox-fluent:focus {
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid;
+    @extend %theme-border-bottom-color;
+}
+
+.ts-textbox-fluent-success {
+    border: 1px solid !important;
+    @extend %theme-green-border-color-10;
+    @extend %theme-green-color-10;
+}
+
+.ts-textbox-fluent-failure {
+    border: 1px solid !important;
+    @extend %theme-error-border-color;
+    @extend %theme-error-color;
+    text-decoration: line-through;
+}

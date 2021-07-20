@@ -1,0 +1,157 @@
+.test-detail-popup .p-dialog .p-dialog-header {
+    height: 140px;
+    background: $ms-color-communicationTint50;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.test-detail-popup .p-dialog-header-close-icon {
+    font-size: 14px/20px !important;
+}
+
+.test-detail-popup .p-dialog-content {
+    overflow: visible;
+}
+
+.test-detail-popup .p-dialog .p-dialog-content {
+    padding: 0 2rem 2rem 2rem;
+}
+
+.test-detail-popup h3 {
+    font: normal normal 500 24px/32px Segoe UI !important;
+    margin: 0 0 10px;
+}
+
+.test-detail-popup h4 {
+    font: normal normal 500 16px/22px Segoe UI !important;
+    margin: 0 0 5px;
+}
+
+.test-detail-popup p {
+    font: normal normal 500 14px/20px Segoe UI !important;
+    margin-bottom: 0;
+}
+
+.test-detail-popup p+p {
+    margin-bottom: 10px;
+}
+
+.resultpopup .p-dialog .p-dialog-header {
+    height: 70px;
+    background: $ms-color-white;
+    display: flex;
+    padding: 20px;
+}
+
+.resultpopup .p-dialog .p-dialog-header .p-dialog-title {
+    text-align: left;
+    font: normal normal 500 24px/32px Segoe UI !important;
+    letter-spacing: 0px;
+    color: $ms-color-gray180;
+    opacity: 1;
+}
+
+.resultpopup .p-dialog-header-close-icon {
+    font-size: 14px/20px !important;
+}
+
+.resultpopup .p-dialog-content {
+    overflow: visible;
+}
+
+.resultpopup .p-dialog .p-dialog-content {
+    padding: 0 2rem 1rem 20px;
+}
+
+.resultpopup h3 {
+    font: normal normal 500 24px/32px Segoe UI !important;
+    margin: 0 0 10px;
+}
+
+.resultpopup h4 {
+    font: normal normal 500 16px/22px Segoe UI !important;
+    margin: 0 0 5px;
+}
+
+.resultpopup p {
+    text-align: left;
+    letter-spacing: 0px;
+    color: $ms-color-gray180;
+    opacity: 1;
+    margin-top: -10px;
+}
+
+.resultpopup .exam-rating {
+    text-align: left;
+    font: normal normal 600 14px/20px Segoe UI !important;
+    letter-spacing: 0px;
+    color: $ms-color-gray180;
+    opacity: 1;
+}
+
+.resultpopup .p-dialog .p-dialog-footer {
+    padding: 10px 1.5rem 1.5rem 1.5rem;
+}
+
+.instruction-popup .p-dialog .p-dialog-header {
+    background: $ms-color-communicationTint50 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.instruction-popup .p-dialog-header-close-icon {
+    font-size: 14px/20px !important;
+}
+
+.instruction-popup .p-dialog-content {
+    text-align: left;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: $ms-color-gray180;
+    opacity: 1;
+}
+
+.instruction .p-dialog .p-dialog-content {
+    padding: 0 2rem 1rem 20px;
+}
+
+
+/* confim section popup */
+
+.confimsectionpopup .p-dialog .p-dialog-header {
+    height: 70px;
+    background: $ms-color-white;
+    display: flex;
+    padding: 20px;
+}
+
+.confimsectionpopup .p-dialog-header-close-icon {
+    font-size: 14px/20px !important;
+}
+
+.confimsectionpopup .p-dialog-content {
+    overflow: visible;
+}
+
+.confimsectionpopup .p-dialog .p-dialog-content {
+    padding: 0 2rem 1rem 20px;
+}
+
+.confimsectionpopup h3 {
+    font: normal normal 500 24px/32px Segoe UI !important;
+    margin: 0 0 10px;
+}
+
+.confimsectionpopup h4 {
+    font: normal normal 500 16px/22px Segoe UI !important;
+    margin: 0 0 5px;
+}
+
+.confimsectionpopup .p-dialog .p-dialog-footer {
+    padding: 10px 1.5rem 1.5rem 1.5rem;
+}
+
+.test-detail-popup div.p-dialog-header-icons {
+    position: absolute !important;
+}

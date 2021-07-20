@@ -1,0 +1,83 @@
+button:focus {
+    outline: none !important;
+}
+
+.ts-btn-fluent-primary {
+    @extend %theme-link-background-color;
+    border: 0;
+    color: $ms-color-white;
+    &:hover {
+        @extend %theme-link-hover-background-color;
+    }
+    &:active {
+        @extend %theme-link-focus-background-color;
+        box-shadow: none;
+    }
+}
+
+.ts-btn-fluent-red {
+    @extend %theme-background-color-danger;
+    border: 0;
+    color: $ms-color-white;
+    &:hover {
+        @extend %theme-background-color-danger-hover;
+    }
+    &:active {
+        @extend %theme-background-color-danger-focus;
+        box-shadow: none;
+    }
+}
+
+.ts-btn-fluent-green {
+    @extend %theme-background-color-success;
+    border: 0;
+    color: $ms-color-white;
+    &:hover {
+        @extend %theme-green-background-color-10;
+    }
+    &:active {
+        @extend %theme-green-background-color;
+        box-shadow: none;
+    }
+}
+
+.ts-btn-fluent-white {
+    background: $ms-color-white;
+    border: 1px solid;
+    @extend %theme-border-color;
+    @extend %theme-link-color;
+    &:hover {
+        background: $ms-color-gray10;
+    }
+    &:active {
+        background: $ms-color-white;
+        box-shadow: none;
+    }
+}
+
+.ts-btn-fluent {
+    font-weight: 500;
+    position: relative;
+    border-radius: 0.2rem;
+    padding: 0 2rem;
+    // min-width: 9.6rem;
+    box-shadow: 0 0.2rem 0.4rem -0.075rem rgb(0 0 0 / 25%);
+    white-space: nowrap;
+}
+
+.ts-btn-width-default {
+    min-width: 9.6rem;
+}
+
+.ts-btn-width-small {
+    min-width: 4.5rem;
+}
+
+.button-height-1 {
+    height: 3rem;
+}
+
+.button-disabled {
+    background-color: $ms-color-grey5 !important;
+    color: $ms-color-grey55;
+}

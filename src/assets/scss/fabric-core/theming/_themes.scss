@@ -1,0 +1,247 @@
+$themes: (
+  "default": (
+    link-color: $ms-color-communicationPrimary,
+    link-light-color: $ms-color-communicationTint20,
+    link-hover-color: $ms-color-communicationShade10,
+    link-focus-color: $ms-color-communicationShade30,
+    error-color: $ms-color-sharedRed10,
+    green-color-10: $ms-color-sharedGreen10,
+    green-color: $ms-color-sharedGreen20,
+    body-bg: $ms-color-gray10,
+    body-text-color: $ms-color-gray180,
+    body-text-light-color: $ms-color-gray140,
+    headings-color: $ms-color-gray180,
+    container-bg: $ms-color-white,
+    container-bg-hover: lighten($ms-color-white, 2%),
+    container-shadow: $elevate-shadow-10,
+    container-bg-faded: $ms-color-gray40,
+    input-border: $ms-color-gray50, // use solid color, as these overlap sometimes and may cause unwanted visual
+    active-color: $ms-color-communicationPrimary,
+    active-color-text: $ms-color-white,
+    sucess-background-color: $ms-color-alertBackgroundColor,
+    sucess-color: $ms-color-alertColor,
+    state-colors: (
+      primary: $ms-color-gray120,
+      secondary: $ms-color-gray40, // should be same color as container-bg-faded
+      success: $ms-color-sharedYellowGreen10,
+      info: $ms-color-sharedBlue10,
+      warning: $ms-color-sharedYellow10,
+      light-danger: $ms-color-lightPink10,
+      danger:  $ms-color-sharedRed10,
+      danger-hover: $ms-color-sharedRed20,
+      danger-focus: $ms-color-sharedPinkRed10
+    )
+  ),
+  "blue": (
+    link-color: $ms-color-ThemeBlue,
+    link-light-color: $ms-color-ThemeBlueTint20,
+    link-hover-color: $ms-color-ThemeBlueShade10,
+    link-focus-color: $ms-color-ThemeBlueShade30,
+    error-color: $ms-color-sharedRed10,
+    green-color-10: $ms-color-sharedGreen10,
+    green-color: $ms-color-sharedGreen20,
+    body-bg: $ms-color-gray10,
+    body-text-color: $ms-color-gray180,
+    body-text-light-color: $ms-color-gray140,
+    headings-color: $ms-color-gray180,
+    container-bg: $ms-color-white,
+    container-bg-hover: lighten($ms-color-white, 2%),
+    container-shadow: $elevate-shadow-10,
+    container-bg-faded: $ms-color-gray40,
+    input-border: $ms-color-gray50, // use solid color, as these overlap sometimes and may cause unwanted visual
+    active-color: $ms-color-ThemeBlue,
+    active-color-text: $ms-color-white,
+    sucess-background-color: $ms-color-alertBackgroundColor,
+    sucess-color: $ms-color-alertColor,
+    state-colors: (
+      primary: $ms-color-gray120,
+      secondary: $ms-color-gray40, // should be same color as container-bg-faded
+      success: $ms-color-sharedYellowGreen10,
+      info: $ms-color-sharedBlue10,
+      warning: $ms-color-sharedYellow10,
+      light-danger: $ms-color-lightPink10,
+      danger:  $ms-color-sharedRed10,
+      danger-hover: $ms-color-sharedRed20,
+      danger-focus: $ms-color-sharedPinkRed10
+    )
+  )
+);
+
+@each $theme, $colors in $themes {
+
+  $state-colors: map-get($colors, state-colors);
+
+  .theme-#{$theme} {
+
+    background-color: map-get($colors, body-bg);
+    color: map-get($colors, body-text-color);
+
+    %theme-body-text-color {
+      color: map-get($colors, body-text-color) !important;
+    }
+
+    %theme-body-bg-color {
+      color: map-get($colors, body-bg);
+    }
+
+    %theme-body-bg-background-color {
+      background-color: map-get($colors, body-bg);
+    }
+
+    // SASS PLACEHOLDERS FOR EXTENDING IN COMPONENT STYLES
+
+    // Primary color START @@@@@@@@@@@@@@@@
+
+    %theme-link-color {
+      color: map-get($colors, link-color) !important;
+    }
+
+    %theme-caret-color {
+      caret-color: map-get($colors, link-color);
+    }
+
+    %theme-border-color {
+      border-color: map-get($colors, link-color) !important;
+    }
+
+    %theme-border-left-color {
+      border-left-color: map-get($colors, link-color);
+    }
+
+    %theme-border-bottom-color {
+      border-bottom-color: map-get($colors, link-color);
+    }
+
+    %theme-link-background-color {
+      background-color: map-get($colors, link-color);
+    }
+
+    %theme-loader-border-color {
+      border-color: map-get($colors, link-color) transparent transparent transparent;
+    }
+
+    // Primary color END ###################
+
+
+    %theme-link-hover-color {
+      color: map-get($colors, link-hover-color);
+    }
+
+    %theme-linear-gradient-color {
+      background: linear-gradient(60deg, map-get($colors, link-color), map-get($colors, link-hover-color));
+    }
+
+    %theme-link-hover-background-color {
+      background-color: map-get($colors, link-hover-color);
+    }
+
+    %theme-link-focus-background-color {
+      background-color: map-get($colors, link-focus-color);
+    }
+
+    %theme-link-focus-border-color {
+      border-color: map-get($colors, link-focus-color);
+    }
+
+    %theme-link-focus-color {
+      color: map-get($colors, link-focus-color);
+    }
+
+    // Red color START @@@@@@@@@@@@@@@@
+
+    %theme-error-color {
+      color: map-get($colors, error-color) !important;
+    }
+
+    %theme-error-border-color {
+      border-color: map-get($colors, error-color) !important;
+    }
+
+    // Red color END ###################
+
+    // Green color START @@@@@@@@@@@@@@@@
+
+    %theme-green-color-10 {
+      color: map-get($colors, green-color-10) !important;
+    }
+
+    %theme-green-background-color-10 {
+      background-color: map-get($colors, green-color-10) !important;
+    }
+
+    %theme-green-border-color-10 {
+      border-color: map-get($colors, green-color-10) !important;
+    }
+
+    %theme-green-color {
+      color: map-get($colors, green-color) !important;
+    }
+
+    %theme-green-background-color {
+      background-color: map-get($colors, green-color) !important;
+    }
+
+    %theme-green-border-color {
+      border-color: map-get($colors, green-color) !important;
+    }
+
+    %theme-green-alert-background-color {
+      background-color: map-get($colors, sucess-background-color) !important;
+    }
+
+    %theme-green-alert-color {
+      color: map-get($colors, sucess-color) !important;
+    }
+
+    // Green Color End #################
+
+    %theme-link-light-background-color {
+      background-color: map-get($colors, link-light-color);
+    }
+
+    %theme-stroke-color {
+      stroke: map-get($colors, link-color);
+    }
+
+    %theme-container-bg {
+      background-color: map-get($colors, container-bg);
+    }
+
+    %theme-container-bg-faded {
+      background-color: map-get($colors, container-bg-faded) !important;
+    }
+
+    %theme-highlighted-bg {
+      background-color: map-get($colors, active-color) !important;
+      color: map-get($colors, active-color-text) !important;
+    }
+
+    %theme-body-text {
+      color: map-get($colors, body-text-color);
+    }
+
+    %theme-color-headings {
+      color: map-get($colors, headings-color);
+    }
+
+    %theme-input-border {
+      border-color: map-get($colors, input-border);
+    }
+
+    @each $state, $color in $state-colors {
+
+      %theme-color-#{$state} {
+        color: $color;
+      }
+
+      %theme-background-color-#{$state} {
+        background-color: $color;
+      }
+
+      %theme-color-#{$state}-darken {
+          color: darken($color, 10%);
+      }
+    }
+
+  }
+}

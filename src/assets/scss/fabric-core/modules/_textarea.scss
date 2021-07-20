@@ -1,0 +1,19 @@
+.ts-textarea-fluent {
+    background: $ms-color-gray30;
+    border-radius: 3px;
+    border: 0;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+.ts-textarea-fluent:focus {
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid;
+    @extend %theme-border-bottom-color;
+}

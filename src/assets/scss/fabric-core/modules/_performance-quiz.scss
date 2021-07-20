@@ -1,0 +1,188 @@
+.performance-quiz {
+    position: relative;
+    z-index: 1001;
+}
+
+.sticky-left-nav {
+    position: fixed;
+    background: $ms-color-white;
+    width: 300px;
+    top: 100px;
+    bottom: 0;
+    height: auto;
+    z-index: 3;
+}
+
+.credentials-instructions-page,
+.casestudy-sidemenu-page {
+    width: 100%;
+    float: left;
+    display: flex;
+    // height: calc(100vh - 200px);
+    overflow: auto;
+    .cip-left-box {
+        width: 300px;
+        float: left;
+        background: $ms-color-white;
+        padding-top: 20px;
+        height: calc(100vh - 112px);
+        .cip-left-list {
+            width: 100%;
+            float: left;
+            margin: 0;
+            padding: 0;
+            >li {
+                width: 100%;
+                float: left;
+                display: flex;
+                border-bottom: 1px solid $ms-color-gray30;
+                flex-direction: column;
+                >a {
+                    font-size: $ms-font-size-16;
+                    @extend %theme-body-text-color;
+                    padding: 16px 24px;
+                    width: 100%;
+                    float: left;
+                    text-decoration: none;
+                }
+            }
+            >li {
+                a.active {
+                    @extend %theme-body-bg-background-color;
+                    @extend %theme-link-color;
+                    font-size: $ms-font-size-16;
+                }
+            }
+        }
+    }
+    .cip-sub-left-list {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0px 23px;
+        >li {
+            width: 100%;
+            float: left;
+            display: flex;
+            border-bottom: 1px solid $ms-color-gray30;
+            flex-direction: column;
+            a {
+                font-size: $ms-font-size-16;
+                @extend %theme-body-text-color;
+                padding: 16px 24px;
+                width: 100%;
+                float: left;
+                text-decoration: none;
+            }
+        }
+        >li {
+            a.active {
+                @extend %theme-body-bg-background-color;
+                @extend %theme-link-color;
+            }
+        }
+    }
+    .not-active {
+        a {
+            color: $ms-color-gray180; //default font color
+            font-size: $ms-font-size-16;
+        }
+    }
+    .cip-right-box {
+        width: calc(100% - 300px);
+        float: left;
+        display: flex;
+        padding: 24px;
+        .tab-title {
+            text-align: left;
+            font: normal normal 600 12px/16px Segoe UI;
+            letter-spacing: 0px;
+            opacity: 1;
+            >span {
+                @extend %theme-link-color;
+            }
+        }
+        .tab-content {
+            text-align: left;
+            letter-spacing: 0px;
+            color: $ms-color-gray180;
+            opacity: 1;
+            padding-top: 10px;
+        }
+        .credentials-title-dec-box {
+            width: 100%;
+            max-width: 750px;
+            margin-left: 5rem;
+            h3 {
+                font-size: 26px;
+                @extend %theme-body-text-color;
+                margin-bottom: 20px;
+            }
+            .ctdb-dec-box {
+                width: 100%;
+                min-width: 30rem;
+                float: left;
+                background: $ms-color-white;
+                padding: 40px 30px;
+                font-size: 16px;
+                line-height: 22px;
+                >label {
+                    font-size: $ms-font-size-18;
+                    @extend %theme-body-text-color;
+                    margin-bottom: 15px !important;
+                    float: left;
+                    width: 100%;
+                }
+                a {
+                    margin: 10px 0 25px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+.logHeading {
+    font-size: $ms-font-size-18;
+    @extend %theme-body-text-color;
+}
+
+.subLogHeading {
+    font-size: $ms-font-size-14;
+    @extend %theme-body-text-color;
+}
+
+.progress-bar-title {
+    font-size: $ms-font-size-12;
+}
+
+.user-name-password {
+    div {
+        label {
+            font-size: $ms-font-size-12;
+            color: $ms-color-gray100;
+        }
+        input {
+            width: 330px;
+            padding: 6px 6px 6px 12px;
+            background: $ms-color-gray20;
+            border: none;
+            color: $ms-color-gray100;
+            font-size: $ms-font-size-14;
+            white-space: nowrap;
+            overflow: hidden !important;
+            text-overflow: ellipsis;
+            &:focus {
+                outline: none !important;
+            }
+        }
+        span {
+            width: 334px;
+            background: $ms-color-gray20;
+            padding: 6px 6px 8px 12px;
+            i {
+                cursor: pointer;
+            }
+        }
+    }
+}

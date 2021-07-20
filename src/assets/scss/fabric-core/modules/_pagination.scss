@@ -1,0 +1,33 @@
+.ts-pagination-fluent {
+    text-align: center;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: $ms-color-gray180;
+    opacity: 1;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    background: $ms-color-communicationPrimary 0% 0% no-repeat padding-box;
+    @extend %theme-link-background-color;
+    border-radius: 3px;
+    opacity: 1;
+    color: $ms-color-gray10;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page {
+    text-align: center;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    opacity: 1;
+    color: $ms-color-gray180;
+}
+
+.pi-angle-double-left:before,
+.pi-angle-double-right:before {
+    display: none;
+}
+
+.p-paginator.p-component>button:nth-child(1),
+.p-paginator.p-component>button:last-child {
+    display: none !important;
+}

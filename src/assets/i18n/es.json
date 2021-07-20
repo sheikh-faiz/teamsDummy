@@ -1,0 +1,164 @@
+{
+    "branding": {
+        "cloudlabs": "CloudLabs"
+    },
+    "common": {
+        "exam": "Examen",
+        "language": "Idioma",
+        "sections": "Secciones",
+        "question": "Pregunta",
+        "section": "Sección",
+        "test": "pruebas",
+        "popup": {
+            "header": {
+                "feedback": "Formulario de comentarios",
+                "confirmation": "Confirmación",
+                "examCompleted": "Examen completado",
+                "helpSection": "Sección de ayuda"
+            }
+        },
+        "success": "éxito",
+        "error": "error",
+        "message": {
+            "credFailed": "¡Lo siento! Tus credenciales caducaron"
+        }
+    },
+    "examList": {
+        "table": {
+            "headings": {
+                "examName": "Nombre",
+                "duration": "Duración",
+                "tags": "Etiquetas"
+            }
+        }
+    },
+    "completedExamList": {
+        "table": {
+            "headings": {
+                "examName": "Nombre",
+                "startDate": "Asumido",
+                "marks": "Marcas",
+                "percentage": "Porcentaje"
+            }
+        }
+    },
+    "exam": {
+        "questions": {
+            "questionSection": "Sección de preguntas",
+            "note": "Nota",
+            "instruction": "Instrucción",
+            "answerSection": "Sección de respuesta",
+            "dropAnswer": "Deje su respuesta aquí"
+        },
+        "result": {
+            "title": "Resultado",
+            "failed": "Ha fallado",
+            "passed": "Aprobado",
+            "marks": "Marcas",
+            "timeSpent": "Tiempo usado",
+            "explanation": "Explicación",
+            "points": "puntos"
+        },
+        "summary": {
+            "minutes": "Minutos",
+            "toPass": "Aprobar",
+            "examTitle": "Examen",
+            "overview": "Descripción general"
+        },
+        "examPopup": {
+            "voucherCode": "Ingrese el cupón/voucher",
+            "activationCode": "Ingrese código de activación",
+            "examTitle": "Detalles del examen",
+            "takeTest": "Prueba",
+            "take": "Llevar",
+            "continue": "Continuar"
+        },
+        "section": {
+            "sectionReview": {
+                "title": "Sección de revisión",
+                "header": {
+                    "section": "Sección",
+                    "timeRemaining": "Tiempo restante"
+                },
+                "answered": "Respondido",
+                "skipped": "Omitido",
+                "notAnswered": "No respondido",
+                "review": "Revisar"
+
+            },
+            "performanceQuiz": {
+                "header": {
+                    "infoInstruct": "Información e instrucciones"
+                },
+                "credIntruct": "Credenciales e instrucciones",
+                "loginCred": "Credenciales de acceso",
+                "credTitle": "Aquí están sus credenciales para iniciar sesión",
+                "msAzure": "Microsoft Azure.",
+                "creatingCred": "Generando credenciales",
+                "userName": "Nombre de usuario",
+                "password": "Contraseña"
+            }
+        },
+        "common": {
+            "freeTest": "Prueba gratis",
+            "paidTest": "Prueba de pago"
+        }
+    },
+    "actions": {
+        "save": "Ahorrar",
+        "submit": "Enviar",
+        "startTest": "Iniciar prueba",
+        "cancelTest": "Cancelar prueba",
+        "getResult": "Obtener resultado",
+        "no": "No",
+        "yes": "sí",
+        "closeTest": "Cerrar prueba",
+        "finishSection": "Sección final",
+        "action": "Acción",
+        "back": "atrás",
+        "finishTest": "Terminar prueba",
+        "confirmation": "Confirmación",
+        "skip": "Saltar",
+        "submitFeedback": "Enviar comentarios",
+        "reset": "Reiniciar",
+        "help": "Ayudar",
+        "previousQuestion": "Pregunta anterior",
+        "nextQuestion": "Próxima pregunta",
+        "copyCode": "Copiar código",
+        "retry": "Reintentar",
+        "downloadApplication": "Descargar aplicación"
+    },
+    "downloadApp": {
+        "step": {
+            "step1Text": "Paso 1: copie el código del cupón",
+            "step2Text": "Paso 2: Descargue la aplicación de prueba de práctica",
+            "step1Content": "Para copiar el código de cupón, haga clic en el botón “Copiar código de cupón” a continuación. Una vez que se esté ejecutando la Prueba de práctica, se ingresará inmediatamente su código de cupón. Este código de cupón le permitirá comenzar el proceso de registro del examen.",
+            "step2Content": "Haga clic en el botón 'Descargar aplicación' y ejecute la aplicación desde la carpeta de descarga",
+            "downloadTestText": "Descargar la aplicación de prueba de práctica"
+        }
+    },
+    "errors": {
+        "noAccessToApp": "¡No tienes permiso para acceder a esta aplicación!",
+        "examInstanceUniqueNameNull": "examInstanceUniqueName es NULL",
+        "cloudLabsCommonError": "There was an unauthorized error while processing last request. Please close current tab and open CloudLabs exam in a new tab.",
+        "teamsCommonError": "Oops! we could not process your last request. Please click on the reload icon on the top to resolve this."
+    },
+    "message": {
+        "voucherRequired": "Se requiere cupón",
+        "activationCodeRequired": "Se requiere el código de activación",
+        "voucherSuccessMessage": "Voucher Successfully Added",
+        "activationCodeSuccessMessage": "Código de activación agregado exitosamente",
+        "voucherFailureMessage": "Código de cupón no válido",
+        "activationCodeFailureMessage": "Código de activación inválido",
+        "confirmationMessage": "¿Estás segura de que quieres terminar la prueba?",
+        "getResultMessage": "¡Gracias por asistir al examen!",
+        "confimSectionHeader": "¿Estás seguro de que deseas continuar con esta acción?",
+        "confimSectionMessage": "Advertencia: esta acción enviará las respuestas para esta sección y no se puede modificar. ¿Estas seguro que deseas continuar?",
+        "feedbackContain": "¡Nos gustaría escuchar sus pensamientos, sugerencias, inquietudes o problemas con cualquier cosa para que podamos mejorar!",
+        "feedbackExperienceString": "¿Qué te pareció la experiencia?",
+        "feedbackQualityString": "¿Cómo se compara con la calidad de las preguntas?",
+        "feedbackText": "Cualquier otra sugerencia ?",
+        "feedbackSuccess": "Gracias por los comentarios",
+        "rating": "Proporcione calificación"
+    }
+}
